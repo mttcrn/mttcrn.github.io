@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width", initial-scale>
         <meta http-equiv="X-UZ-Compatible" content="ie=edge">
         <link rel='icon' href="favicon.png">
-        <title>Caterina's personal website</title>
+        <title>Cate's website</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
@@ -26,6 +26,7 @@
                 <li><a href="#intro_contacts">Intro & contacts</a></li>
                 <li><a href="#resume">Experiences</a></li>
                 <li><a href="#interest">Interest</a></li>
+                <li><a href="CV_Motti_Caterina.pdf" download>Download CV</a></li>
             </ul>
             <div class="hamburger btn">
                 <span class="bar"></span>
@@ -38,7 +39,7 @@
         <div id="intro_contacts">
           <div class="intro">
                 <div class="intro_content">
-                     <div id='type' class="typetext tw"></div>
+                     <ul> <li id='type' class="typetext tw"> </li> <li class="blinker tw"></li> </ul>
                      <div class="contacts">
                     	 	<div class="social-links reveal">
                           <a href="mailto:motti.caterina@gmail.com"><i class="fa fa-envelope"></i></a>
@@ -48,6 +49,7 @@
                       	  <a href="https://twitter.com/mttcrn"><i class="fa fa-twitter"></i></a>
                     	 	</div>
                       </div>
+                      <div class="arrow bounce"><a href="#resume"><i class="fa fa-angle-down normal-text tw"></i></a></div>
               	 	</div>
               </div>
         </div>
@@ -56,34 +58,41 @@
         <!-- SECTION RESUME -->
         <div id="resume">
           <div class="about reveal">
-            <div class="about__content">
+            <div class="about_content">
               <h3 class="big-text tl">About me.</h3>
-              <p>I am currently in second year of bachelor in informatics engineering at Politecnico di Milano.</p>
+              <p> I am currently in second year of bachelor in Computer Engineering at Politecnico di Milano. </br>
+                I have great interest in cybersecurity, full stak development and artificial intelligence.  </p>
+              <p> My goal is to grow and learn both professionally and personally: I'm looking for new opportunities of any kind. </p>
+              <p> Aside from coding, I enjoy travelling, reading and playing tennis. </p>
             </div>
           </div>
 
             <div class="timeline reveal">
               <ul>
                 <li>
-                  <div class="timeline__content">
+                  <div class="timeline_content">
                     <p class="small-text"> January - June 2022 </p>
                     <h3 class="normal-text tw"> Erasmus at University of Alicante </h3>
                     <p class="small-text"> I spent the 2nd semester of my second year in Spain. </p>
-                    <p class="small-text"> I have studied telecommunication engineering, taking three courses: digital signal processing,
+                    <p class="small-text"> I have taken three courses: digital signal processing,
                       communication theory and transmission media. </p>
                     <p class="small-text"> I really enjoyed the time spent abroad, I met many people from all over the world and I improved
                        my english. It was very challenging both from social and university point of view.</p>
                   </div>
                 </li>
                 <li>
-                  <div class="timeline__content">
+                  <div class="timeline_content">
                     <p class="small-text"> 2020 - currently </p>
-                    <h3 class="normal-text tw"> Bachelor in Informatics Engineering at Politecnico di Milano </h3>
-                    <p class="small-text"> </p>
+                    <h3 class="normal-text tw"> Bachelor in Computer Engineering at Politecnico di Milano </h3>
+                    <p class="small-text"> Courses that I liked the most:
+                    </br> >  Fundamentals of programming in C.
+                    </br> >  Computer architecture and operative systems.
+                    </br> >  Logic & Algebra. </p>
+                    <p class="small-text">  </p>
                   </div>
                 </li>
                 <li>
-                  <div class="timeline__content">
+                  <div class="timeline_content">
                     <p class="small-text"> 2015 - 2020 </p>
                     <h3 class="normal-text tw"> Scientific high school diploma in applied sciences at Lyceum Claudio Cavalleri (100/100) </h3>
                     <p class="small-text"> I was named "best student among the 2020 graduates". </p>
@@ -99,11 +108,11 @@
         <!-- SECTION PROJECTS -->
         <div id="interest">
           <div class="cover mt2">
-            <div class="cover__title reveal">
+            <div class="cover_title reveal">
               <h3 class="big-text tl">What I'm <br> intrested in</h3>
             </div>
-            <div class="cover__text reveal">
-              <h4 class="normal-text tw mt1">Cybersecurity</h4>
+            <div class="cover_text reveal">
+              <h4 class="normal-text tw mt1">Titolo del mio paragrafo</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
               <h4 class="normal-text tw mt1">Titolo del mio paragrafo</h4>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  </p>
@@ -113,7 +122,7 @@
           </div>
         </div>
 
-        <footer class="tw">Created and designed by Caterina Motti <i class="far fa-copyright tw"></i> 2022 All rights reserved.</footer>
+        <footer class="mt1 tw reveal">Created and designed by Caterina Motti <i class="far fa-copyright tw"></i> 2022 All rights reserved.</footer>
 
 
         <!-- SCRIPT JS -->
@@ -121,43 +130,59 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script>
-            $(document).ready(function(){
-              $(".hamburger").on("click", function() {
-                $(".menu").toggleClass("menu_open");
-                if (document.querySelector(".menu").classList.contains("menu_open")) {
-                    $(".btn").toggleClass('active');
-                    $(".btn").removeClass('not-active');
-                } else {
-                  $(".btn").toggleClass('not-active');
-                  $(".btn").removeClass('active');
+          $(document).ready(function(){
+            $(".hamburger").on("click", function() {
+              $(".menu").toggleClass("menu_open");
+              if (document.querySelector(".menu").classList.contains("menu_open")) {
+                  $(".btn").toggleClass('active');
+                  $(".btn").removeClass('not-active');
+              } else {
+                $(".btn").toggleClass('not-active');
+                $(".btn").removeClass('active');
+              }
+            });
+
+            $(".menu a").on("click", function(){
+                $(".menu").removeClass("menu_open");
+                $(".btn").toggleClass('not-active');
+                $(".btn").removeClass('active');
+            });
+          });
+        </script>
+
+       <script>
+          ScrollReveal().reveal('.reveal', {
+            distance: '100px', duration: 1000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600
+          });
+       </script>
+
+       <script>
+          var string = "Hello! I'm Caterina Motti";
+          var array = string.split("");
+          var timer;
+
+          function frameLooper () {
+          	if (array.length > 0) {
+          		document.getElementById("type").innerHTML += array.shift();
+          	} else {
+          		clearTimeout(timer);
+          	}
+          	loopTimer = setTimeout('frameLooper()', 180); /* change number for speed */
+          }
+          frameLooper();
+        </script>
+
+        <script>
+            $(document).ready(function() {
+              $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 1.5) {
+                  $('.arrow').addClass('fade');
+                } else{
+                  $('.arrow').removeClass('fade');
                 }
-              });
-
-              $(".menu a").on("click", function(){
-                  $(".menu").removeClass("menu_open");
-                  $(".btn").toggleClass('not-active');
-                  $(".btn").removeClass('active');
-              });
+              })
             });
-
-            ScrollReveal().reveal('.reveal', {
-              distance: '100px', duration: 1000, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600
-            });
-
-            var string = "Hello! I'm Caterina Motti";
-            var array = string.split("");
-            var timer;
-
-            function frameLooper () {
-            	if (array.length > 0) {
-            		document.getElementById("type").innerHTML += array.shift();
-            	} else {
-            		clearTimeout(timer);
-            			}
-            	loopTimer = setTimeout('frameLooper()', 90); /* change 70 for speed */
-            }
-            frameLooper();
-
         </script>
 
     </body>
