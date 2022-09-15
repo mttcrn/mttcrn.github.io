@@ -4,7 +4,11 @@ html{
   background-color: #0a192f;
 }
 
-body{font-family: 'Poppins', sans-serif; font-size: 16px;}
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
 
 a{text-decoration: none;}
 
@@ -17,7 +21,7 @@ p{line-height: 25px; color: #c3c5c4; font-weight: 300;}
 .normal-text{font-size: 20px; font-size-adjust: auto; line-height: 30px}
 .small-text{font-size: 14px; line-height: 25px}
 .bold{font-weight: bold;}
-.tw{color: #fff}
+.tw{color: #ffffff}
 .tl{color: #a6b6f8}
 .tb{color: #2b6abc}
 
@@ -26,19 +30,16 @@ p{line-height: 25px; color: #c3c5c4; font-weight: 300;}
 
  /*Custom scroll bar */
 ::-webkit-scrollbar {
-width: 10px;
-}
-
-::-webkit-scrollbar-track {
- background: #f1f1f1;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
- background: #888;
+    border: 8px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
- background: #555
+    background: rgba(255,255,255,0.3);
 }
 
 /*Header*/
@@ -74,7 +75,7 @@ width: 10px;
 }
 
 .menu_open{
-  right:0%;
+  right: 0%;
 }
 
 .hamburger{
@@ -267,7 +268,6 @@ width: 10px;
   text-align: center;
 }
 
-
 /*Vertical timeline*/
 .timeline{
   width: 100%;
@@ -438,13 +438,16 @@ width: 10px;
 	background-color: #ffffff;
 }
 
-/*Footer*/
-footer{
-  position: absolute;
-  width:100%;
-  padding: 15px;
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
   font-size: 10px;
+  padding: 15px;
+  align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 /*Content*/
@@ -454,11 +457,6 @@ footer{
 .mt1{margin-top: 50px;}
 .mt2{margin-top: 100px;}
 .mt3{margin-top: 150px;}
-
-@media (max-width: 768px){
-  .mt-sma-0{margin-top: 0;}
-  .mb-sma-0{margin-bottom: 0;}
-}
 
 
 /*Applica il padding all'interno degli elementi per evitare sovrapposizioni*/
