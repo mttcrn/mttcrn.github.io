@@ -222,6 +222,15 @@ p{line-height: 25px; color: #c3c5c4; font-weight: 300;}
   animation: blinker 1s infinite;
 }
 
+@media (max-width: 768px){
+  .typetext{
+    font-size: 50px;
+  }
+  .blinker{
+    font-size: 50px;
+  }
+}
+
 @keyframes blinker{
   50%{
     opacity: 0;
@@ -286,11 +295,6 @@ p{line-height: 25px; color: #c3c5c4; font-weight: 300;}
     width: 100%;
     padding: 30px 0px;
   }
-}
-
-/*About*/
-.about{
-  text-align: center;
 }
 
 /*Vertical timeline*/
@@ -449,12 +453,8 @@ footer {
 .content{max-width: 900px; margin: 40px auto;}
 
 /*Helpers*/
-.mt1{margin-top: 50px;}
-.mt2{margin-top: 100px;}
-.mt3{margin-top: 150px;}
+.mt{margin-top: 50px;}
 
-
-/*Applica il padding all'interno degli elementi per evitare sovrapposizioni*/
 *,
 *:before,
 *:after {
