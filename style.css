@@ -10,6 +10,18 @@
   --m-back-day: #F8FAFC;
 }
 
+a:focus {
+  outline: none;
+  outline-color: transparent;
+  background-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 1px var(--s-night);
+}
+
+body.day a:focus{
+  box-shadow: 0 0 0 1px var(--s-day);
+}
+
 /*Helpers*/
 .mt{margin-top: 50px;}
 .big-text{font-size: 40px; font-weight: 900; line-height: 40px}
@@ -25,9 +37,6 @@ html{
   color: var(--text-night);
 }
 
-a, button, input, select, textarea {
-  outline: none;
-}
 
 body{
   overflow-x: hidden;
@@ -305,6 +314,7 @@ body.day ::-webkit-scrollbar-thumb:hover {
 .toggle-input:checked::before {
     transform: translateX(16px);
 }
+
 
 /*Intro*/
 .intro{
