@@ -260,6 +260,16 @@ body.day ::-webkit-scrollbar-thumb:hover {
   z-index: 999;
 }
 
+.toggleup{
+  bottom: 40px;
+}
+
+@media (max-width: 402px){
+  .toggleup{
+    bottom: 50px;
+  }
+}
+
 .toggle-input {
     position: relative;
     width: 40px;

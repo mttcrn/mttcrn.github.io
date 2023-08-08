@@ -52,6 +52,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var footerOffset = $('footer').offset().top;
+      var toggle = $('.toggle');
+
+      if (window.innerWidth < 500) {
+        if (scroll + $(window).height() >= footerOffset - 15) {
+          toggle.addClass('toggleup');
+        } else {
+          toggle.removeClass('toggleup');
+        }
+      }
+    });
+
     //ScrollReveal initialization
     ScrollReveal().reveal(".reveal", {
         distance: "100px",
