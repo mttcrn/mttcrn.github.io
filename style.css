@@ -25,6 +25,10 @@ html{
   color: var(--text-night);
 }
 
+a, button, input, select, textarea {
+  outline: none;
+}
+
 body{
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
@@ -355,15 +359,21 @@ body.day ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.arrow{
-  margin: auto;
+.arrow {
   position: fixed;
-  align-items: center;
-  bottom: 10px;
-  padding: 10px;
   display: inline-block;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 10px;
+  padding: 20px;
   cursor: pointer;
   animation: bounce 3s infinite;
+}
+
+.arrow i {
+  width: 40px;
+  height: 40px;
 }
 
 .fade {
