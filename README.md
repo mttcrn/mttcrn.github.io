@@ -1,6 +1,3 @@
-<div align="center">
-  <img alt="Logo" src="/images/faviconday.png" width="80"/>
-</div>
 <h1 align="center">
   mttcrn.github.io
 </h1>
