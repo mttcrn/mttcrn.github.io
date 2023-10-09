@@ -10,18 +10,6 @@
   --m-back-day: #F8FAFC;
 }
 
-a:focus {
-  outline: none;
-  outline-color: transparent;
-  background-color: transparent;
-  outline-style: solid;
-  box-shadow: 0 0 0 1px var(--s-night);
-}
-
-body.day a:focus{
-  box-shadow: 0 0 0 1px var(--s-day);
-}
-
 /*Helpers*/
 .mt{margin-top: 50px;}
 .big-text{font-size: 40px; font-weight: 900; line-height: 40px}
@@ -131,7 +119,7 @@ body.day ::-webkit-scrollbar-thumb:hover {
 .menu li {display: block;}
 .menu li a {
   padding: 20px 100px;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 35px;
   display: block;
   text-align: right;
@@ -144,6 +132,13 @@ body.day ::-webkit-scrollbar-thumb:hover {
 
 .day .menu{
   background-color: var(--m-back-day);
+}
+
+@media (max-width: 768px){
+  .menu li a{
+    text-align: center;
+    font-size: 28px;
+  }
 }
 
 .hamburger{
@@ -315,7 +310,6 @@ body.day ::-webkit-scrollbar-thumb:hover {
     transform: translateX(16px);
 }
 
-
 /*Intro*/
 .intro{
   position: relative;
@@ -408,7 +402,7 @@ body.day ::-webkit-scrollbar-thumb:hover {
 }
 
 .cover_title{
-  width: 40%;
+  width: 30%;
   padding: 50px 50px;
   display: flex;
   align-items: center;
@@ -416,7 +410,7 @@ body.day ::-webkit-scrollbar-thumb:hover {
 }
 
 .cover_text{
-  width: 60%;
+  width: 70%;
   padding: 50px 50px;
   text-align: right;
 }
@@ -613,7 +607,7 @@ footer {
   position: relative;
   width: 100%;
   bottom: 0;
-  font-size: 10px;
+  font-size: 12px;
   padding: 15px;
   align-items: center;
   text-align: center;
