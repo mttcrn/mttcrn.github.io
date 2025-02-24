@@ -86,14 +86,6 @@ p {
     cursor: pointer;
 }
 
-body.day ::-webkit-scrollbar-thumb {
-    border: 8px solid red !important;
-}
-
-body.day ::-webkit-scrollbar-thumb:hover {
-    background-color: red !important;
-}
-
 /*Header*/
 .header{
   width: 100%;
