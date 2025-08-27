@@ -11,7 +11,7 @@
 }
 
 /*Helpers*/
-.mt{margin-top: 50px;}
+.mt{margin-top: 40px;}
 .big-text{font-size: 40px; font-weight: 900; line-height: 40px}
 .normal-text{font-size: 22px; font-size-adjust: auto; line-height: 30px}
 .small-text{font-size: 16px; line-height: 25px}
@@ -402,9 +402,9 @@ p {
 }
 
 .cover_text{
-  width: 70%;
+  width: 50%;
   padding: 50px 50px;
-  text-align: right;
+  text-align: left;
 }
 
 @media (max-width: 860px){
